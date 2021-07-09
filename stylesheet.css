@@ -1,0 +1,88 @@
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+.w3-gradient-1
+{
+    background-image: linear-gradient(to bottom right, aqua, coral);
+}
+
+.w3-gradient-2
+{
+    background-image: linear-gradient(to bottom right, coral, aqua);
+}
+
+.home-page-header
+{
+    background-color: rgba(187, 187, 187, 0.247);
+}
+
+.item-search-input
+{
+    width: 50%;
+    margin:  10px 0 0 25%;
+    font-size: x-large;
+    outline: none;
+}
+
+.itemList
+{
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    margin: 0 0 0 10%;
+    background-color: rgba(187, 187, 187, 0.247);
+    border-radius: 10px;
+}
+
+.customItemImageStyle
+{
+    width: 204px;
+    height: 112px;
+}
+
+.customItemStyle
+{
+    background-color: rgba(255, 254, 254, 0.938);
+    box-shadow:solid  10px rgba(0, 0, 0, 0.397);
+    outline: none;
+}
+
+.customItemImageStyle
+{
+    border-radius: 10px;
+}
+
+.customItemDetailStyle
+{
+    display: none;
+    margin: -1.6px;
+}
+
+.customItemButtonStyle
+{
+    display: none;
+}
+
+
+/* SCROLL BAR CUSTOM */
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: aqua; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: coral; 
+  }
