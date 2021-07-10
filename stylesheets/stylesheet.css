@@ -86,3 +86,13 @@ body
   ::-webkit-scrollbar-thumb:hover {
     background: coral; 
   }
+
+  @media only screen and (max-width: 460px) {
+    .item-search-input
+    {
+        width: 96%;
+        margin:  10px 2% 0 2%;
+        font-size: x-large;
+        outline: none;
+    }
+ }
