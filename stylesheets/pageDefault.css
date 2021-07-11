@@ -1,0 +1,26 @@
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* SCROLL BAR CUSTOM */
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: aqua; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: coral; 
+  }
