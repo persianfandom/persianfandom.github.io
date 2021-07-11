@@ -116,35 +116,13 @@ function itemClicked(clickedId)
     if(docD.style.display === "none")
     {
         docD.style.display = "block"
-        // docD2.style.display = "block"
         
     }
     else 
     {
         docD.style.display = "none"
-        // docD2.style.display = "none"
     }
-
-    // document.getElementById(clickedId).style.pointerEvents = "none"
 }
-
-// function itemClicked2(clickedId)
-// {
-//     var need = clickedId.substr(0, clickedId.length - 1) + "1"
-//     var need2 = clickedId
-//     console.log(need)
-//     console.log(need2)
-//     var docD = document.getElementById(need)
-//     var docD2 = document.getElementById(need2)
-    
-//     document.getElementById(need).style.display = "none"
-//     document.getElementById(need2).style.display = "none"
-//         // docD.style.display =  "none"
-//         // docD2.style.display = "none"
-        
-    
-//     // document.getElementById(need3).style.pointerEvents = "visible"
-// }
 
 // function addItem()
 // {
