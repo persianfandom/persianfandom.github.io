@@ -78,12 +78,19 @@
 {
     /* color: rgba(0, 0, 0, 0.719); */
     color: rgba(255, 255, 255, 0.897);
-    font-style: bold;
+    
 }
 
 .instagramIcon:hover
 {
-    color: rgb(253, 0, 211);
+    background-color: red;
+  background-image: linear-gradient(45deg, #9900ff, #ff00c8);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .twitterIcon
@@ -110,10 +117,20 @@
     color: rgba(0, 0, 0, 0.719);
 }
 
-  
+.redditIcon
+{
+    color: rgba(255, 255, 255, 0.897);
+}  
+
+.redditIcon:hover
+{
+    color: rgb(255, 43, 43);
+}
+
 .footerLabel
 {
     color: rgba(255, 255, 255, 0.897);
     font-family: 'Dancing Script', cursive;
     margin: 0% 0% 0% 2%;
 }
+
