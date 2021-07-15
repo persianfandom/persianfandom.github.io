@@ -1,0 +1,20 @@
+.customMasterDiv
+{
+    background-color: rgba(255, 255, 255, 0.849);
+}
+
+.customImage
+{
+    width: 35%;
+    height: auto;
+
+    border-radius: 10px;
+
+    margin: 5% auto auto 1%;
+}
+
+.customLabel
+{
+    user-select: none;
+    margin: auto 1% auto auto;
+}
