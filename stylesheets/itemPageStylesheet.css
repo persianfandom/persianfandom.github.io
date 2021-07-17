@@ -18,6 +18,8 @@
 {
     user-select: none;
     margin: auto 1% auto auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
 }
 
 .customDetail
