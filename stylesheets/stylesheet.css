@@ -60,6 +60,15 @@
     display: none;
 }
 
+.itemPageButton
+{
+    font-family: 'Lato', sans-serif;
+    margin: 0px 0px -8px -16px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgb(153, 153, 153);
+    width: 115.4%;
+}
+
 /* Footer icons */
 
 .facebookIcon

@@ -5,6 +5,7 @@ function userFocusOnInput()
 
 var searchFound = [];
 var searchFoundImage = [];
+var searchFoundItemPageAddress = [];
 function userFocusOnInputF()
 {
     let menu = document.getElementById('itemList');
@@ -36,6 +37,7 @@ function userFocusOnInputF()
             {
                 searchFound.push(items[i]);
                 searchFoundImage.push(itemsI[i])
+                searchFoundItemPageAddress.push(pagesAddress[i])
                 console.log(items[i]);
                 continue;
             }
@@ -57,7 +59,8 @@ function userFocusOnInputF()
     for (var i = 0; i < searchFound.length; i++)
     {
         var button = document.createElement("button")
-        var closeButton = document.createElement("button")
+        var itemPageButton = document.createElement("Button")
+        var itemPageLink = document.createElement("a")
         var img = document.createElement("img")
         var label = document.createElement("p")
         var p = document.createElement("p")
@@ -83,14 +86,22 @@ function userFocusOnInputF()
         p.setAttribute("style", "display: none;")
         p.appendChild(document.createTextNode(searchFound[i]))
 
+        itemPageButton.setAttribute("id", searchFound[i] + "2")
+        itemPageButton.setAttribute("class", "itemPageButton w3-button")
+        itemPageButton.setAttribute("style", "display: none;")
+        itemPageButton.appendChild(document.createTextNode("Open in a new tab"))
+
+        itemPageLink.setAttribute("href", searchFoundItemPageAddress[i])
+        itemPageLink.setAttribute("id", searchFound[i] + "1")
+        itemPageLink.setAttribute("style", "display: block;")
+        itemPageLink.setAttribute("style", "text-decoration: none;")
+        itemPageLink.appendChild(itemPageButton)
+
         button.setAttribute("id" ,searchFound[i])
         button.setAttribute("onClick", "itemClicked(this.id)")
         button.setAttribute("class", "customItemStyle w3-button w3-hover-pale-red w3-margin w3-round-large w3-card-4")
 
-        closeButton.setAttribute("id", searchFound[i] + 2)
-        closeButton.setAttribute("onClick", "itemClicked2(this.id)")
-        closeButton.setAttribute("class", "w3-button customItemButtonStyle")
-        closeButton.appendChild(document.createTextNode("Close panel"))
+        
 
         button.appendChild(img)
         button.appendChild(br)
@@ -98,13 +109,14 @@ function userFocusOnInputF()
         button.appendChild(br)
         button.appendChild(p)
         button.appendChild(br)
-        button.appendChild(closeButton)
+        button.appendChild(itemPageLink)
 
         itemList.appendChild(button)
         
     }
     searchFound = []
     searchFoundImage = [];
+    searchFoundItemPageAddress = []
 }      
         
 function itemClicked(clickedId)
@@ -116,11 +128,12 @@ function itemClicked(clickedId)
     if(docD.style.display === "none")
     {
         docD.style.display = "block"
-        
+        docD2.style.display = "block"
     }
     else 
     {
         docD.style.display = "none"
+        docD2.style.display = "none"
     }
 }
 
