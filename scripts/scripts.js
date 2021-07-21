@@ -137,6 +137,64 @@ function itemClicked(clickedId)
     }
 }
 
+
+// Open and close navigation bar in mobile
+function w3_open() 
+{
+    var windowWH = getWindowSize();
+
+    if(windowWH['width'] < 460)
+    {
+        console.log(windowWH['width'])
+        console.log(windowWH['height'])
+        if(document.getElementById("mySidebar").style.display === "block")
+        {
+            
+        }
+        else if(document.getElementById("mySidebar").style.display === "none")
+        {
+            
+        }
+        else
+        {
+            document.getElementById("mySidebar").setAttribute("style", "display: none;")
+        }
+    }
+    
+    var helper = document.getElementById("mySidebar")
+
+    if(helper.style.display === "none")
+    {
+        helper.style.display = "block"
+    }
+    else
+    {
+        helper.style.display = "none"
+    }
+}
+  
+  
+// Get window size
+function getWindowSize() {
+     var win_size = new Array;
+     if (self.innerHeight) {
+       win_size['height'] = self.innerHeight;
+       win_size['width'] = self.innerWidth;
+     } else if (document.documentElement && document.documentElement.clientHeight) {
+       win_size['height'] = document.documentElement.clientHeight;
+       win_size['width'] = document.documentElement.Width;
+     } else if (document.body) {
+       win_size['height'] = document.body.clientHeight;
+       win_size['width'] = document.body.clientWidth;
+     }
+     return win_size;
+}
+
+
+
+
+
+
 // function addItem()
 // {
 //     var li = document.createElement("li");
