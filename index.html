@@ -25,7 +25,7 @@
 <body class="w3-gradient-2">
     
     <!-- Header -->
-    <div class="home-page-header w3-margin  w3-round-large w3-card-4 w3-responsive">
+    <div class="home-page-header w3-card-4">
         <button id="openPageId" class="openPageClass w3-round-large w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
         <div id="mySidebar" class="pageHeaderBar w3-bar w3-center w3-animate-top">
             <button class="w3-button w3-margin w3-text-white w3-sans-serif w3-hover-white w3-xlarge">Home</button>
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    
+    <label id="searchLabel" for="item-search-inputID" class="searchLabelClass w3-xxlarge w3-text-white">Search</label>
         <input id="item-search-inputID" type="text" class="item-search-input w3-input w3-bottombar w3-border-aqua" onclick="userFocusOnInput()" oninput="userFocusOnInputF()"></input>
 
     <div class="w3-container">
@@ -65,4 +65,18 @@
 </footer>
 
 </body>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    console.log("SCROLL")
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("searchLabel").innerHTML = "fixed";
+    } else {
+      document.getElementById("searchLabel").innerHTML = "Yay";
+    }
+  }
+</script>
+
 </html>

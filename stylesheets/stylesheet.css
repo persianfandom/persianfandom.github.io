@@ -10,6 +10,9 @@
 
 .home-page-header
 {
+    
+    width: 100%;
+    
     background-color: rgba(187, 187, 187, 0.247);
 }
 
@@ -25,6 +28,10 @@
     margin:  10px 0 0 25%;
     font-size: x-large;
     outline: none;
+}
+
+.searchLabelClass
+{
 }
 
 .itemList
